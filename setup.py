@@ -7,10 +7,7 @@ with open('requirements.txt') as file:
 setup(
     name='ml_prod_pkg',
     version='0.0.1',
-    packages=find_packages(
-        where='ml_prod',
-        include=['*pkg*'],
-    ),
+    packages=['pkg_ml_prod'],
     scripts=['scripts/script_ml_prod'],
     requirements=requirements
-)
+)   
