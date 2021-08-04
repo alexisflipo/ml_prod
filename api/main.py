@@ -22,7 +22,7 @@ app = FastAPI()
 
 
 @app.get("/predict")
-def index(island='Torgersen',bill_length_mm=39.1,bill_depth_mm=18.7,flipper_length_mm=181.0,body_mass_g=3750.0,sex='MALE'):
+async def index(island='Torgersen',bill_length_mm=39.1,bill_depth_mm=18.7,flipper_length_mm=181.0,body_mass_g=3750.0,sex='MALE'):
     island = str(island)
     bill_length_mm = float(bill_length_mm)
     bill_depth_mm = float(bill_depth_mm)
