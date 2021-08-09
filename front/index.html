@@ -15,40 +15,48 @@
 <div class="stuff">
     
     <h1>Check the penguins</h1>
-  <form action="post">
+  <form >
     <main class='my-5'>
+      <div class="d-flex flex-column">
         <div id="flat-slider-vertical-1"></div>
+        <p class="param">Longueur du bec en mm</p>
+      </div>
+      <div class="d-flex flex-column">
         <div id="flat-slider-vertical-3"></div>
+        <p class="param">Profondeur du bec en mm</p>
+      </div>
+      <div class="d-flex flex-column">
         <div id="flat-slider-vertical-4"></div>
-        <div id="flat-slider-vertical-5"></div>   
+        <p class="param">Longueur de la nageoire en mm</p>
+      </div>
+      <div class="d-flex flex-column">
+        <div id="flat-slider-vertical-5"></div>
+        <p class="param">Poids en g</p>
+      </div>  
     </main>
 
     <div class="container d-flex justify-content-center">
       <select class="form-select form-select-sm mt-5" aria-label=".form-select-sm example">
         <option selected>Choose the island</option>
-        <option value="1">Torgersen</option>
-        <option value="2">Biscoe</option>
-        <option value="3">Dream</option>
+        <option value="Torgersen">Torgersen</option>
+        <option value="Biscoe">Biscoe</option>
+        <option value="Dream">Dream</option>
       </select>
     </div>
     <div class="container d-flex justify-content-center">
-      <div class="form-check my-5 mx-3">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-        <label class="form-check-label" for="flexRadioDefault1">
-          FEMALE
-        </label>
-        </div>
-      <div class="form-check my-5 mx-3">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-        <label class="form-check-label" for="flexRadioDefault2">
-          MALE
-        </label>
+    
+    <div class='d-flex justify-content-center my-5'>
+      gender:
+      <input class="mx-3" type="radio" name="gender" value="Male">Male
+      <input class="mx-3" type="radio" name="gender" value="Female">Female
+    </div>
       </div>
     </div>
     <div class="d-flex justify-content-center">
       <button id="perso" type="submit" class="btn-perso text-center">Validate</button>
     </div>
   </form>
+  <h1 id=test class='mt-5'></h1>
 </div>
 <!-- partial -->
 <script src='https://simeydotme.github.io/jQuery-ui-Slider-Pips/dist/js/jquery-plus-ui.min.js'></script>
