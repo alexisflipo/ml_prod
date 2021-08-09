@@ -6,6 +6,8 @@ from pkg_ml_prod import model_predictions
 from pkg_ml_prod.preprocessing import drop_na, train_test_split
 from pkg_ml_prod import get_data, preprocessing, pipeline, model
 
+from fastapi.middleware.cors import CORSMiddleware
+
 
 df = get_data.get_data()
 
@@ -20,9 +22,18 @@ best_model = model.create_model(pipe,X_train,y_train)
 
 app = FastAPI()
 
+origins = ["*"]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/predict")
-def index(island='Torgersen',bill_length_mm=39.1,bill_depth_mm=18.7,flipper_length_mm=181.0,body_mass_g=3750.0,sex='MALE'):
+async def index(island='Torgersen',bill_length_mm=39.1,bill_depth_mm=18.7,flipper_length_mm=181.0,body_mass_g=3750.0,sex='MALE'):
     island = str(island)
     bill_length_mm = float(bill_length_mm)
     bill_depth_mm = float(bill_depth_mm)
