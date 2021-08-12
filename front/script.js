@@ -91,7 +91,8 @@ btn.addEventListener('click', function() {
     sexe = sex.toUpperCase()
    
     event.preventDefault();
-    fetch(`http://127.0.0.1:8000/predict?island=${island}&bill_length_mm=${bill_length_mm}&bill_depth_mm=${bill_depth_mm}&flipper_length_mm=${flipper_length_mm}&body_mass_g=${body_mass_g}&sex=${sexe}`).then((Response) => {
+    fetch(`[Hier 15:26] Pierre KUHNMUNCH
+    https://jeanneymar-r64mctjkzq-ew.a.run.app/predict?island=${island}&bill_length_mm=${bill_length_mm}&bill_depth_mm=${bill_depth_mm}&flipper_length_mm=${flipper_length_mm}&body_mass_g=${body_mass_g}&sex=${sexe}`).then((Response) => {
             return Response.json()
         }).then((data) => {
             titre.innerText = ''
