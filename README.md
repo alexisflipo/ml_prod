@@ -14,7 +14,7 @@ Un fichier `penguins.csv` correspondant au jeu de données nécessaire à la cr�
 
 **Un dossier Front :**
 
-Dossier composé de `index.html`, `script.js` et d'un `style.css` permettant la création d'une page web
+Dossier composé de `index.html`, `script.js` et d'un `style.css` permettant la création d'une page web et l'appel à l'API
 
 **Un dossier Notebooks :**
 
