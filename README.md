@@ -73,3 +73,7 @@ https://console.cloud.google.com/storage/
 
 5 – Bien joué, vous pouvez maintenant accéder à votre grâce à l'url fournie
 
+
+**Lien vers le site : https://penguinsfront.herokuapp.com/**
+
+**Lien vers l'API : https://jeanneymar-r64mctjkzq-ew.a.run.app/predict**
