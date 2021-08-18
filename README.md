@@ -12,19 +12,35 @@ Un fichier `main.py` qui permet de créer l'api avec FastAPI en se basant sur le
 
 Un fichier `penguins.csv` correspondant au jeu de données nécessaire à la création du modèle de ML
 
-** Un dossier Front :**
+**Un dossier Front :**
 
 Dossier composé de `index.html`, `script.js` et d'un `style.css` permettant la création d'une page web
 
-** Un dossier Notebooks :**
+**Un dossier Notebooks :**
 
 Un fichier `viz.ipynb` qui représente l'analyse du jeu de données ainsi que l'élaboration du modèle de Machine Learning permettant de prédire l'espèce d'un pingouin 
 
-** Un dosssier pkg_ml_prod :**
+**Un dosssier pkg_ml_prod :**
 
 Dossier composé de `__init__.py`, `get_data.py`, `model_predictions.py`, `model.py`, `pipeline.py`, `preprocessing.py`.
 Ces fichiers permettent de mieux structurer l'architecture de la création du modèle de ML déjà réalisé dans le fichier viz.py
 
-** Un dossier scripts :**
+**Un dossier scripts :**
+
+Vous pouvez créer des scripts afin d'executer certaines commandes automatiquement
+
+**Fichiers CONFIG :**
+
+`.dockerignore` permet de déclarer des fichiers que vous ne souhaitez pas envoyer sur Docker
+
+`.gitignore` permet de déclarer des fichiers que vous ne souhaitez pas envoyer sur Github
+
+`Dockerfile` permet de créer l'image Docker
+
+`Makefile` permet d'exécuter un ensemble d'actions, comme la compilation d'un projet, l'archivage de document, la mise à jour de site, etc
+
+`requirements.txt` permet de déclarer les librairies souhaitées ou nécessaires lors de l'installation pour le bon fonctionnement de l'app
+
+`setup.py` permet de créer un pkg en python si vous le souhaitez
 
 
