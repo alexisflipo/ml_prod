@@ -43,4 +43,27 @@ Vous pouvez créer des scripts afin d'executer certaines commandes automatiqueme
 
 `setup.py` permet de créer un pkg en python si vous le souhaitez
 
+# Comment déployer sur GCP(Google Cloud Platform) ? 
+
+1 – Installer le gcp CLI  => https://cloud.google.com/sdk
+
+2 – Créer un projet sur GCP :
+`gcloud projects create project_id`
+
+3 – Construire l'image directement sur GCP:
+
+`gcloud builds submit  "path_to_directory " -–tag=gcr.io/project_id/image_name`
+
+Note : L'id du projet doit être le même que celui que vous avez fourni dans l'étape 2
+
+Si besoin vous pouvez trouver vos projets à cette adresse https://console.cloud.google.com/home/ et l'id du projet ici : 
+
+Une fois cela terminé, vous pourrez voir votre conteneur dans votre Cloud Storage :
+https://console.cloud.google.com/storage/
+
+4 - Maintenant c'est l'heure de faire tourner votre image créée sur GCP:
+
+`gcloud run deploy –image gcr.io/project_id/image_name`
+
+5 – Bien joué, vous pouvez maintenant accéder à votre grâce à l'url fournie
 
