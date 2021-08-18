@@ -58,6 +58,8 @@ Note : L'id du projet doit être le même que celui que vous avez fourni dans l'
 
 Si besoin vous pouvez trouver vos projets à cette adresse https://console.cloud.google.com/home/ et l'id du projet ici : 
 
+<img src="https://res.cloudinary.com/alex-web-dev-full-stack/image/upload/v1629279893/project_id_ewnmas.png">
+
 Une fois cela terminé, vous pourrez voir votre conteneur dans votre Cloud Storage :
 https://console.cloud.google.com/storage/
 
