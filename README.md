@@ -61,6 +61,10 @@ Si besoin vous pouvez trouver vos projets à cette adresse https://console.cloud
 Une fois cela terminé, vous pourrez voir votre conteneur dans votre Cloud Storage :
 https://console.cloud.google.com/storage/
 
+
+<img src="https://res.cloudinary.com/alex-web-dev-full-stack/image/upload/v1629279893/Google_storage_ogcg7v.png" >
+
+
 4 - Maintenant c'est l'heure de faire tourner votre image créée sur GCP:
 
 `gcloud run deploy –image gcr.io/project_id/image_name`
